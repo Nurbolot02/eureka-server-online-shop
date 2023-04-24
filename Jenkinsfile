@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Build') {
             step {
-                mvn clean package
+                echo "==========================start build jar!======================="
+                sh mvn clean package
             }
         }
     }
