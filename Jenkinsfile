@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             step {
                 echo "==========================start build jar!======================="
-                sh mvn clean && mvn package
+                sh 'mvn clean package'
             }
         }
     }
