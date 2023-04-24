@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "==========================start build jar!======================="
-                sh './mvnw clean package'
+                sh +x './mvnw clean package'
             }
         }
     }
