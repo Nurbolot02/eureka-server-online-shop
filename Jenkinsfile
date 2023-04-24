@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "==========================start build jar!======================="
-                sh 'chmod +x ./mvnw clean package'
+                sh 'chmod +x ./mvnw && ./mvnw clean package'
             }
         }
     }
